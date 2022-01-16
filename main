@@ -1,0 +1,33 @@
+package sdaproject;
+import java.util.*;
+
+
+public class SdaProject {
+    public static void main(String[] args) {
+ 
+    System.out.println("Enter your 1 for user 2 for admin");
+    Scanner c = new Scanner(System.in);
+    int us = c.nextInt();
+    
+    if(us == 1){
+        System.out.println("you are user");
+            Manager ma = new Manager();
+            ma.Manage();
+    }
+    
+    else if(us == 2){
+        NullPatternDemo n = new NullPatternDemo();
+       
+        boolean a = n.NPD();
+      
+        if(a == true){
+            System.out.println("you are not admin");
+        }
+        else if(a == false){
+         System.out.println("you are  admin");
+         
+        }
+    
+   
+    }
+    }
